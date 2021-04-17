@@ -1,0 +1,52 @@
+{
+  "name": "node-typescript-api",
+  "version": "1.0.0",
+  "description": "Node typescript api",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.8.3"
+  },
+  "scripts": {
+    "start": "ts-node ./api/index.ts",
+    "develop": "nodemon --watch api/ --ignore build/ -e .ts --exec ts-node api/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriyKotsur/node-typescript-api.git"
+  },
+  "author": "AndriyKotsur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriyKotsur/node-typescript-api/issues"
+  },
+  "homepage": "https://github.com/AndriyKotsur/node-typescript-api/issues#readme",
+  "dependencies": {
+    "@sendgrid/mail": "^7.4.2",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^4.4.1",
+    "joi": "^17.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "winston": "^3.3.3"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.11",
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/mongoose": "^5.10.3",
+    "@types/morgan": "^1.9.2",
+    "@types/node": "^14.14.25",
+    "@types/winston": "^2.4.4",
+    "@typescript-eslint/eslint-plugin": "^4.14.2",
+    "@typescript-eslint/parser": "^4.14.2",
+    "eslint": "^7.19.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
