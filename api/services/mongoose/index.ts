@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import { database } from '../../config'
+import {database} from '../../config'
 
 mongoose.set('useUnifiedTopology', true)
 mongoose.set('useCreateIndex', true)
@@ -10,13 +10,13 @@ mongoose.set('debug', true)
 mongoose.connect(database.mongoUri)
 
 mongoose.connection.on('connected', () =>
-	console.log('⚡️ [ database ]: connected'),
+    console.log('⚡️ [ database ]: connected'),
 )
 
 mongoose.connection.on('disconnected', () =>
-	console.log('⚠ [ database ]: disconnected'),
+    console.log('⚠ [ database ]: disconnected'),
 )
 
 mongoose.connection.on('error', err =>
-	console.log('🔥 [ database ]: error ' + err),
+    console.log('🔥 [ database ]: error ' + err),
 )
