@@ -1,4 +1,4 @@
-# Node Typescript API
+# Free Society API
 
 The project uses typescript and consists of an Express server paired with Mongo database.
 
